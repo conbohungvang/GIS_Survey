@@ -1,6 +1,7 @@
 .map{
-    width: 100%;
-    height: 90vh;
+    display: grid;
+    grid-template-columns: 75vw 25vw;
+    grid-template-rows: 90vh;
 }
 
 .draw-app{
@@ -11,7 +12,19 @@
 .ol-touch .draw-app {
     top: 80px;
   }
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
 
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
 
  /* popup style */
  .ol-popup {
