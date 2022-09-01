@@ -729,9 +729,11 @@ function addData(type1,name1,account1,geom1,addre1,dt1){
                 console.log(dataResult)
                 var result = JSON.parse(dataResult)
                 if (result.statusCode == 200){
-                    console.log('data added successfully')
+                    console.log('data added successfully');
+                    alert('Tạo ao nuôi thành công.')
                 } else {
-                    console.log('data not added successfully')
+                    console.log('data not added successfully');
+                    alert('Tạo ao nuôi thất bại!')
                 }
 
             }
