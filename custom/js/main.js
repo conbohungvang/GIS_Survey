@@ -50,9 +50,7 @@ function convertCoordinates(lon, lat) {
 console.log(convertCoordinates(105.4273222,10.5183484));
 console.log(ol.proj.transform([11713042.053424716,1201360.773324848], 'EPSG:3857','EPSG:4326'));
 var ip=self.location.hostname;
-if(ip=="localhost"){
-    ip=ip+":8080";
-}
+    ip="localhost:8080";
 console.log(ip);
 function ipcood(string1){
     return temp1 = [parseFloat(string1.substr(0,string1.indexOf(","))),parseFloat(string1.substr(string1.indexOf(",")+1,20))];
